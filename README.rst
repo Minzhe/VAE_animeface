@@ -65,7 +65,7 @@ property of each latent as following:
 
 .. image:: results/laplace_betaH_loss/test_prior_traversals.png
 
-Prior face clustering
+Original faces clustering
 **********************
 Original anime faces are clustered based on latent features (selected feature is either below 1% (left 5) or above
 99% (right 5) among all data points, while the rest latent features are closeto each other). Visulization of the 
