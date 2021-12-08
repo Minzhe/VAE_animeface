@@ -29,7 +29,8 @@ def save_model(model, directory, metadata=None, filename=MODEL_FILENAME):
         metadata = dict(
             img_size=model.img_size, 
             latent_dim=model.latent_dim,
-            model_type=model.model_type
+            model_class=model.model_class,
+            model_struc=model.model_struc
         )
     save_metadata(metadata, directory)
 

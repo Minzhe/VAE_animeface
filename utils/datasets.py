@@ -21,7 +21,7 @@ class img_dataset(Dataset):
         self.root = root
         imgs = []
         for ext in [".png", ".jpg", ".jpeg"]:
-            imgs += glob.glob(os.path.join(self.root, '*' + ext))
+            imgs += glob.glob(os.path.join(self.root, '*' + ext))[:2560]
         self.imgs = imgs
         self.size = size
         self.transform = transforms.ToTensor()
